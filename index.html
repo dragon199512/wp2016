@@ -1,28 +1,41 @@
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
 </head>
+
 <body>
-  <br><br>
-  <h4>Profile</h4>
-  <table align="center">
-    <tr>
-      <td id="col">姓名</td>
-      <td>王鄑</td>
-    </tr>
-    <tr>
-      <td id="col">系級</td>
-      <td>資訊106</td>
-    </tr>
-    <tr>
-      <td id="col">學號</td>
-      <td>F74022052</td>
-    </tr>
-    <tr>
-      <td id="col">興趣</td>
-      <td>Gaming, Anime</td>
-    </tr>
-  </table>
+
+    <!--canvas id="canvas"></canvas-->
+    <div class="layout-fixedObj"></div>
+    <div class="table">
+      <div class="table-cell">
+        <div class="container">
+          <svg class="background-svg" width="400px" height="300px" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1"><feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.255 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur><feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite><feColorMatrix values="0 0 0 0.5 0.647959184   0 0 0 0.5 0.849016553   0 0.8 0 0.6 0.549016553  0.8 0.4 0 0.35 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix><feMerge><feMergeNode in="shadowMatrixOuter1"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode><feMergeNode in="shadowMatrixInner1"></feMergeNode></feMerge></filter></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Artboard-1" fill="#e49766"><path d="M187.785156,200 L180,232 L66,232 L58.2148437,200 L187.785156,200 Z" id="Rectangle-1" filter="url(#filter-1)"></path><path d="M349.760339,49.1234675 L375.905579,277.733833 L199.999999,277.733834 L43.9648432,143.710938 L349.760339,49.1234675 Z" id="Triangle-1" filter="url(#filter-1)"></path><path d="M399.8936,96.1889997 L29.4623426,250.140552 L0,36.4302476 L399.8936,96.1889997 Z" id="Triangle-2" filter="url(#filter-1)"></path></g></g></svg>
+          <div class="container-info">
+            <h1>
+              Hi! <br />I'm <span>Chin Wang</span><span class="info">NCKU CSIE 106</span>
+            </h1>
+            <div class="box">
+                <div class="info">I love gaming.</div><br>
+                <a class="box-item" href="https://www.facebook.com/profile.php?id=100001292569206" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="box-item" href="https://github.com/dragon199512" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="box-item" href="http://steamcommunity.com/id/ApoKrytia/" target="_blank"><i class="fa fa-steam"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="modernizr.js"></script>
+    <script type="text/javascript" src="http://www.monogatari-series.com/assets/js/velocity.min.js"></script>
+    <script type="text/javascript" src="http://www.monogatari-series.com/assets/js/floatObj.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <!--script type="text/javascript" src="utamonogatari.js"></script-->
 </body>
 </html>
